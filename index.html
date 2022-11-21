@@ -2,7 +2,6 @@
 <html lang="fr">
 <meta charset="utf-8">
     <head>
-
         <link rel="stylesheet" href="asset/css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">  
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
@@ -12,12 +11,14 @@
         <h1>COMPLETEZ VOTRE PROFIL</h1>
         <div id="container">
             <section class= "page" id="connexion">
-                <h2>Information de Connexion</h2>
+                <main>
+                    <h2>Information de Connexion</h2>
+                </main>
                     <form action="/" method="get">
                         <div>
                             <label for="mail">Nom d'utilisateur</label>
                             <br/>
-                            <input  type="text" id="mail" name="user_name">
+                            <input  type="text" id="user_name" name="user_name">
                         </div>
                         <div>
                             <label for="mail">Email</label>
@@ -32,18 +33,20 @@
                         <div>
                             <label for="password">Confirmer mot de passe</label>
                             <br/>
-                            <input  type="password" id="password" name="user_confPassword">
+                            <input  type="password" id="validate" name="user_confPassword">
                         </div>
                         <div class="button">
                             <br/>
-                            <button id="button" type="submit">ENREGISTRER</button>
+                            <button type="submit">ENREGISTRER</button>
                         </div>
                     </form>
             </section>
             <section class="page" id="user_profesionnel">
-                <h2>Profil d'Utilisateur</h2>
+                <main>
+                    <h2>Profil d'Utilisateur</h2>
+                </main>
                     <form action="/" method="get">
-                        <div class="field">
+                        <section class="field">
                             <fieldset>
                                 <legend>Niveau d'étude</legend>
                                     <input type="radio" name="profil_user" id="capbep" value="CAP-BEP"/>
@@ -65,36 +68,40 @@
                                 <input type="radio" name="profil_user" id="bac7" value="BAC+7"/>
                                 <label for="bac7">BAC +7</label>
                             </fieldset>
-                        </div>
-                        <fieldset class="field">
-                            <legend>Profil de développeur</legend>
-                                <input type="radio" name="profil_dev" id="back" value="Backend"/>
-                                <label for="back">Dev Web Backend</label>
-                                
-                                <input type="radio" name="profil_dev" id="front" value="Frontend"/>
-                                <label for="front">DEv WEb Frontend</label>
-                                
-                                <input type="radio" name="profil_dev" id="full" value="Fullstack"/>
-                                <label for="full">Dev Web Fullstack</label>
-                        </fieldset>
-                        <fieldset class="field">
-                            <input type="radio" name="profil_dev" id="videoGame" value="videogame"/>
-                            <label for="vg">Dev Jeu Vidéo</label>
-    
-                            <input type="radio" name="profil_dev" id="software" value="Software"/>
-                            <label for="soft">Dev Logiciel</label>
-    
-                            <input type="radio" name="profil_dev" id="mobile" value="Mobile"/>
-                            <label for="mobile">Dev Mobile</label>
-                        </fieldset>
+                        </section>
+                        <section class="field">
+                            <fieldset>
+                                <legend>Profil de développeur</legend>
+                                    <input type="radio" name="profil_dev" id="back" value="Backend"/>
+                                    <label for="back">Dev Web Backend</label>
+                                    
+                                    <input type="radio" name="profil_dev" id="front" value="Frontend"/>
+                                    <label for="front">Dev Web Frontend</label>
+                                    
+                                    <input type="radio" name="profil_dev" id="full" value="Fullstack"/>
+                                    <label for="full">Dev Web Fullstack</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="profil_dev" id="videoGame" value="videogame"/>
+                                <label for="vg">Dev Jeu Vidéo</label>
+        
+                                <input type="radio" name="profil_dev" id="software" value="Software"/>
+                                <label for="soft">Dev Logiciel</label>
+        
+                                <input type="radio" name="profil_dev" id="mobile" value="Mobile"/>
+                                <label for="mobile">Dev Mobile</label>
+                            </fieldset>
+                        </section>
                         <div class="button">
                             <br/>
-                            <button id="button" type="submit">ENREGISTRER</button>
+                            <button type="submit">ENREGISTRER</button>
                         </div>
                     </form>
                 </section>
             <section class="page" id="centre_interest">
-                <h2> Centre d'intêret</h2>
+                <main>
+                    <h2> Centre d'intêret</h2>
+                </main>
                     <form>
                         <fieldset>
                         <input type="checkbox" name="interest" id="bank" value="Banque"/>
@@ -123,7 +130,7 @@
                     </fieldset>
                     <div class="button">
                             <br/>
-                            <button id="button" type="submit">ENREGISTRER</button>
+                            <button type="submit">ENREGISTRER</button>
                         </div>
                     </form>
             </section>

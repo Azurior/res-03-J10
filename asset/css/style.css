@@ -11,56 +11,75 @@ noir : #0d0f0f;
 
 body {
     font-family: 'Work Sans', sans-serif;
-    /*font-family: 'Oswald', sans-serif;*/
+    
     padding : 0px;
     margin : 0px;
 }
 
 h1 {
-    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
     color: #253879;
     text-align: center;
 }
 
 #container {
+    margin-top: 0px;
     display : grid;
     grid-template-columns: repeat(3, 1fr);
     
 }
 
 #user_profesionnel{
+    display: grid;
+    margin-top: 0px;
     border: solid;
     border-width: 0px 1px 0px 1px;
 }
 
-h2{
+main{
+    font-family: 'Oswald', sans-serif;
+    height: 100px;
     background-color: #3a61ef;
     color: white;
     text-transform: uppercase;
+    text-align: center;
+}
+
+section{
     margin-top: 0px;
+    display: grid;
+    
 }
 
-#connexion{
-       
-}    
-
-
-
-
-
-fieldset {
+fieldset{
     border: none;
-    display: flex;
-    flex-direction: column;
-    /*flex-wrap: wrap;*/
-    
-    
-}
-.feidl {
-    
+    width: 100%;
+    columns: 2;
 }
 
-#button {
+#connexion input {
+    width: 85%;
+    border: none;
+    background-color: #dfe4f7;
+}
+
+.button{
+    justify-content: center;
+}
+
+button {
+    font-family: 'Oswald', sans-serif;
+    margin-left : 20px;
+    padding: 10px;
+    width: 150px;
     background-color: #476fdb;
+    color: #eafbf0;
     border: none;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    background-color: #253879;
 }
