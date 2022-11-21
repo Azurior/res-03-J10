@@ -11,7 +11,7 @@ noir : #0d0f0f;
 
 body {
     font-family: 'Work Sans', sans-serif;
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
     padding : 0px;
     margin : 0px;
 }
@@ -28,29 +28,37 @@ h1 {
     
 }
 
-.page{
-    
+#user_profesionnel{
+    border: solid;
+    border-width: 0px 1px 0px 1px;
 }
 
 h2{
-    background-color: #253879;
+    background-color: #3a61ef;
     color: white;
     text-transform: uppercase;
+    margin-top: 0px;
 }
 
 #connexion{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+       
 }    
 
 
 
-.label {
-    color: #476fdb;
-}
 
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    
+    
+}
+.feidl {
+    
+}
 
 #button {
     background-color: #476fdb;

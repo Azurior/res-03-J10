@@ -11,26 +11,26 @@
     <body>
         <h1>COMPLETEZ VOTRE PROFIL</h1>
         <div id="container">
-            <div class= "page" id="connexion">
+            <section class= "page" id="connexion">
                 <h2>Information de Connexion</h2>
                     <form action="/" method="get">
                         <div>
-                            <label class="label" for="mail">Nom d'utilisateur</label>
+                            <label for="mail">Nom d'utilisateur</label>
                             <br/>
                             <input  type="text" id="mail" name="user_name">
                         </div>
                         <div>
-                            <label class="label" for="mail">Email</label>
+                            <label for="mail">Email</label>
                             <br/>
                             <input  type="text" id="mail" name="user_mail">
                         </div>
                         <div>
-                            <label class="label" for="password">Password</label>
+                            <label for="password">Password</label>
                             <br/>
                             <input  type="password" id="password" name="user_password">
                         </div>
                         <div>
-                            <label class="label" for="password">Confirmer mot de passe</label>
+                            <label for="password">Confirmer mot de passe</label>
                             <br/>
                             <input  type="password" id="password" name="user_confPassword">
                         </div>
@@ -39,42 +39,94 @@
                             <button id="button" type="submit">ENREGISTRER</button>
                         </div>
                     </form>
-            </div>
-            <div class="page" id="user_profesionnel">
+            </section>
+            <section class="page" id="user_profesionnel">
                 <h2>Profil d'Utilisateur</h2>
-                    <form>
-                        <fieldset>
-                        <input type="radio" name="profil_user" id="capbep" value="CAP-BEP"/>
-                        <label for="capbep">CAP-BEP</label>
+                    <form action="/" method="get">
+                        <div class="field">
+                            <fieldset>
+                                <legend>Niveau d'étude</legend>
+                                    <input type="radio" name="profil_user" id="capbep" value="CAP-BEP"/>
+                                    <label for="capbep">CAP-BEP</label>
+                                    
+                                    <input type="radio" name="profil_user" id="bac" value="BAC"/>
+                                    <label for="bac">BAC</label>
+                                    
+                                    <input type="radio" name="profil_user" id="bac2" value="BAC+2"/>
+                                    <label for="bac2">BAC +2</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="profil_user" id="bac3" value="BAC+3"/>
+                                <label for="bac3">BAC +3</label>
+            
+                                <input type="radio" name="profil_user" id="bac5" value="BAC+5"/>
+                                <label for="bac5">BAC +5</label>
+            
+                                <input type="radio" name="profil_user" id="bac7" value="BAC+7"/>
+                                <label for="bac7">BAC +7</label>
+                            </fieldset>
+                        </div>
+                        <fieldset class="field">
+                            <legend>Profil de développeur</legend>
+                                <input type="radio" name="profil_dev" id="back" value="Backend"/>
+                                <label for="back">Dev Web Backend</label>
+                                
+                                <input type="radio" name="profil_dev" id="front" value="Frontend"/>
+                                <label for="front">DEv WEb Frontend</label>
+                                
+                                <input type="radio" name="profil_dev" id="full" value="Fullstack"/>
+                                <label for="full">Dev Web Fullstack</label>
                         </fieldset>
-                        <fieldset>
-                        <input type="radio" name="profil_user" id="bac" value="BAC"/>
-                        <label for="bac">BAC</label>
+                        <fieldset class="field">
+                            <input type="radio" name="profil_dev" id="videoGame" value="videogame"/>
+                            <label for="vg">Dev Jeu Vidéo</label>
+    
+                            <input type="radio" name="profil_dev" id="software" value="Software"/>
+                            <label for="soft">Dev Logiciel</label>
+    
+                            <input type="radio" name="profil_dev" id="mobile" value="Mobile"/>
+                            <label for="mobile">Dev Mobile</label>
                         </fieldset>
-                        <fieldset>
-                        <input type="radio" name="profil_user" id="bac2" value="BAC+2"/>
-                        <label for="bac2">BAC +2</label>
-                        </fieldset>
-                        <fieldset>
-                        <input type="radio" name="profil_user" id="bac3" value="BAC+3"/>
-                        <label for="bac3">BAC +3</label>
-                        </fieldset>
-                        <fieldset>
-                        <input type="radio" name="profil_user" id="bac5" value="BAC+5"/>
-                        <label for="bac5">BAC +5</label>
-                        </fieldset>
-                        <fieldset>
-                        <input type="radio" name="profil_user" id="bac7" value="BAC+7"/>
-                        <label for="bac7">BAC +7</label>
-                        </fieldset>
+                        <div class="button">
+                            <br/>
+                            <button id="button" type="submit">ENREGISTRER</button>
+                        </div>
                     </form>
-                    </div>
-            <div class="page" id="centre_interest">
+                </section>
+            <section class="page" id="centre_interest">
                 <h2> Centre d'intêret</h2>
                     <form>
-                                
+                        <fieldset>
+                        <input type="checkbox" name="interest" id="bank" value="Banque"/>
+                        <label for="bank">Banque</label>
+
+                        <input type="checkbox" name="interest" id="pub" value="Pub"/>
+                        <label for="pub">Publicité</label>
+
+                        <input type="checkbox" name="interest" id="fi" value="Finance"/>
+                        <label for="fi">Finance</label>
+
+                        <input type="checkbox" name="interest" id="sa" value="Santé"/>
+                        <label for="sa">Santé</label>
+
+                        <input type="checkbox" name="interest" id="com" value="Communication"/>
+                        <label for="com">Communication</label>
+
+                        <input type="checkbox" name="interest" id="def" value="Defense"/>
+                        <label for="def">Défense</label>
+                        
+                        <input type="checkbox" name="interest" id="ed" value="Education"/>
+                        <label for="ed">Education</label>
+                        
+                        <input type="checkbox" name="interest" id="pol" value="Politique"/>
+                        <label for="pol">Politique</label>
+                    </fieldset>
+                    <div class="button">
+                            <br/>
+                            <button id="button" type="submit">ENREGISTRER</button>
+                        </div>
                     </form>
-            </div>
+            </section>
     <script type="application/javascript" src="assets/js/index.js"></script>
     </body>
 </html>
