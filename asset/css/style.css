@@ -1,0 +1,58 @@
+/*
+bleu : #3a61ef;  
+bleu foncé : #253879;  
+bleu clair : #dfe4f7;  
+blanc cassé : #eafbf0;  
+blanc : #ffffff;  
+rouge : #d9022f;  
+vert : #1e7062;  
+noir : #0d0f0f;
+*/
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    padding : 0px;
+    margin : 0px;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #253879;
+    text-align: center;
+}
+
+#container {
+    display : grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.page{
+    
+}
+
+h2{
+    background-color: #253879;
+    color: white;
+    text-transform: uppercase;
+}
+
+#connexion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}    
+
+
+
+.label {
+    color: #476fdb;
+}
+
+
+#button {
+    background-color: #476fdb;
+    border: none;
+}
